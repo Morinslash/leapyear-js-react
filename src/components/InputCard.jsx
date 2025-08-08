@@ -15,7 +15,7 @@ export default function InputCard() {
     const isDisabled = value.trim().length === 0;
 
     return (
-        <Card title="Year Input" bodyClassName="h-full">
+        <Card title="Year Input" bodyClassName="h-full text-left">
             <div className="h-full w-full flex flex-col justify-between gap-4">
                 <input
                     type="text"

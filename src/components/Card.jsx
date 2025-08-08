@@ -9,7 +9,7 @@ export default function Card({title, children, className = "", bodyClassName}) {
                 {title}
             </div>
             <div className="flex-1 flex items-center justify-center p-6">
-                <div className={`w-full ${bodyClassName ?? "text-2xl font-medium text-slate-700 text-center"}`}>
+                <div className={`w-full min-w-0 break-words overflow-auto text-slate-700 text-base md:text-lg leading-relaxed text-center ${bodyClassName ?? ""}`}>
                     {children}
                 </div>
             </div>
